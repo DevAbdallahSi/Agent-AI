@@ -1,0 +1,29 @@
+{
+  "name": "ai-programming-education-platform",
+  "version": "1.0.0",
+  "description": "Full-stack AI-powered programming education platform",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm run dev",
+    "build": "npm run server:build && npm run client:build",
+    "server:build": "cd server && npm run build",
+    "client:build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "seed": "cd server && npx ts-node src/scripts/seedData.ts"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "ai",
+    "education",
+    "programming",
+    "react",
+    "nodejs",
+    "mongodb",
+    "typescript"
+  ],
+  "author": "AI Education Platform Team",
+  "license": "MIT"
+}
