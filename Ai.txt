@@ -1,0 +1,16 @@
+ai-programming-education-platform/
+├── client/                 # React frontend
+│   ├── src/
+│   │   ├── components/     # Reusable UI components
+│   │   ├── pages/         # Page components
+│   │   ├── contexts/      # React contexts for state
+│   │   ├── services/      # API service functions
+│   │   └── types/         # TypeScript definitions
+├── server/                # Node.js backend
+│   ├── src/
+│   │   ├── controllers/   # Route handlers
+│   │   ├── models/        # Database schemas
+│   │   ├── routes/        # API endpoints
+│   │   ├── middleware/    # Custom middleware
+│   │   └── sockets/       # Real-time functionality
+└── README.md             # Complete setup guide
