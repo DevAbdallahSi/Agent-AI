@@ -66,10 +66,11 @@ export interface AlgorithmVisualization {
 
 export interface AIMessage {
   id: string
-  from: 'self' | 'ai'
+  type: 'user' | 'ai'
   content: string
   timestamp: Date
-  sender?: string
+  language?: string
+  codeSnippet?: string
 }
 
 export interface Progress {
@@ -116,20 +117,6 @@ export interface VoiceSettings {
   speed: number
   pitch: number
   volume: number
-}
-
-export interface OpenRouterMessage {
-  role: 'user' | 'assistant' | 'system'
-  content: string
-}
-
-export interface OpenRouterResponse {
-  choices: Array<{
-    message: {
-      content: string
-      role: string
-    }
-  }>
 }
 
 export interface LeaderboardEntry {

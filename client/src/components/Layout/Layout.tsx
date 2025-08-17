@@ -2,7 +2,8 @@ import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
 import Header from './Header'
 import Sidebar from './Sidebar'
-import ChatButton from '../AI/ChatButton'
+import VoiceAgent from '../AI/VoiceAgent'
+import Chatbot from '../AI/Chatbot'
 
 const Layout: React.FC = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)
@@ -19,7 +20,8 @@ const Layout: React.FC = () => {
         </main>
       </div>
 
-      <ChatButton />
+      <VoiceAgent />
+      <Chatbot />
     </div>
   )
 }
